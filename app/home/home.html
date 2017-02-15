@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home Page</title>
-  </head>
-  <body>
-    <h1>Home Page</h1>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="home/home.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" data-target="#mainNavbar" data-toggle="collapse">
+
+      <a href="#" class="active"><img ng-src="resources/images/logo-dark.png" alt="Infrrd" class="navbar-brand"></a>
+      <div class="navbar-header">
+        <button class="navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse navLinks dropdown" id="mainNavbar">
+
+        <ul class="nav navbar-nav navbar-right right-margin">
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Players</a>
+            <ul class="dropdown-menu">
+              <li><a ui-sref="players">Player Search</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Matches</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Results</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Calender</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">View Teams</a></li>
+              <li><a href="#">Points Table</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Statistics</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Batting records</a></li>
+              <li><a href="#">Bowling Records</a></li>
+              <li><a href="#">Fielding Records</a></li>
+              <li><a href="#">Player Rankings</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">League</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">League Info</a></li>
+              <li><a href="#">Grounds</a></li>
+              <li><a href="#">Umpires</a></li>
+              <li><a href="#">Photo Gallery</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
+          <li><a ui-sref='login'>Login</a></li>
+          <li><a ui-sref="register">SignUp</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container logoStyle">
+      <img ng-src="resources/images/Cricket-logo.gif" alt="Infrrd Premier League">
+    </div>
+
+  </div>
+</body>
 </html>
