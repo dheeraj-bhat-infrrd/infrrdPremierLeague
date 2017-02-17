@@ -1,8 +1,9 @@
 nav{
-  box-shadow: 4px 4.5px 5px #888888;
+  box-shadow: 4px 4.5px 5px #C0C0C0;
 }
 .navbar-brand{
   padding: 0px;
+  z-index: 10;
 }
 
 .right-margin{
@@ -59,6 +60,38 @@ span{
   color: #999999;
 }
 
-table{
-  border: 3px solid black;
+.playersFound{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+}
+.playersFound table{
+  border-top: 1px solid #d3d3d3;;
+  width: 90%;
+  text-align: center;
+  background-color: #DCDCDC;
+}
+
+.playersFound tr a{
+  color: #d3d3d3;
+}
+
+.playersFound tr a:hover{
+  color: darkgray;
+  text-decoration: none;
+}
+
+.playersFound tr a:focus {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.playersFound tr{
+  border-top: 1px solid gray;
+}
+
+.playersFound   td,th{
+  text-align: center;
+
 }

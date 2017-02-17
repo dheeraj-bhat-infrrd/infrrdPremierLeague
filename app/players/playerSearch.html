@@ -17,28 +17,28 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-      <div class="navbar-collapse collapse navLinks dropdown" id="mainNavbar">
+      <div class="navbar-collapse collapse navLinks navbar-right dropdown" id="mainNavbar" >
 
         <ul class="nav navbar-nav navbar-right right-margin">
-          <li><a class="dropdown-toggle" data-toggle="dropdown">Players</a>
+          <li><a href="" class="dropdown-toggle" data-toggle="dropdown">Players</a>
             <ul class="dropdown-menu">
               <li><a ui-sref="players" class="active">Player Search</a></li>
             </ul>
           </li>
-          <li><a class="dropdown-toggle" data-toggle="dropdown">Matches</a>
+          <li><a href="" class="dropdown-toggle" data-toggle="dropdown">Matches</a>
             <ul class="dropdown-menu">
-              <li><a href="#">Results</a></li>
+              <li><a ui-sref="results">Results</a></li>
               <li><a href="#">Schedule</a></li>
               <li><a href="#">Calender</a></li>
             </ul>
           </li>
-          <li><a class="dropdown-toggle" data-toggle="dropdown">Teams</a>
+          <li><a href="" class="dropdown-toggle" data-toggle="dropdown">Teams</a>
             <ul class="dropdown-menu">
               <li><a href="#">View Teams</a></li>
               <li><a href="#">Points Table</a></li>
             </ul>
           </li>
-          <li><a class="dropdown-toggle" data-toggle="dropdown">Statistics</a>
+          <li><a href="" class="dropdown-toggle" data-toggle="dropdown">Statistics</a>
             <ul class="dropdown-menu">
               <li><a href="#">Batting records</a></li>
               <li><a href="#">Bowling Records</a></li>
@@ -46,7 +46,7 @@
               <li><a href="#">Player Rankings</a></li>
             </ul>
           </li>
-          <li><a class="dropdown-toggle" data-toggle="dropdown">League</a>
+          <li><a href="" class="dropdown-toggle" data-toggle="dropdown">League</a>
             <ul class="dropdown-menu">
               <li><a href="#">League Info</a></li>
               <li><a href="#">Grounds</a></li>
@@ -92,12 +92,12 @@
     <div class="playersFound" ng-show="playerFound">
         <table>
           <tr style="background-color: #222222; color: #999999;">
-            <th> No </th>
-            <th> Player Name </th>
-            <th> Player Role </th>
-            <th> Team </th>
+            <th> <a href="" ng-click="sortfield = 'no'; reverse=!reverse"> No </a> </th>
+            <th> <a href="" ng-click="sortfield = 'name'; reverse=!reverse">Player Name</a> </th>
+            <th> <a href="" ng-click="sortfield = 'role'; reverse=!reverse">Player Role</a> </th>
+            <th> <a href="" ng-click="sortfield = 'team'; reverse=!reverse">Team</a> </th>
           </tr>
-          <tr ng-repeat="player in playersSearched">
+          <tr ng-repeat="player in playersSearched | orderBy : sortField : reverse">
             <td>{{ player.no }}</td>
             <td>{{ player.name }}</td>
             <td>{{ player.role }}</td>

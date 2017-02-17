@@ -6,7 +6,8 @@ angular.module('InfrrdPL', [
   'InfrrdPL.home',
   'InfrrdPL.register',
   'InfrrdPL.login',
-  'InfrrdPL.players'
+  'InfrrdPL.players',
+  'InfrrdPL.matches'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 

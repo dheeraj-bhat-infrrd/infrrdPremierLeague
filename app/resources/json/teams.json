@@ -1,0 +1,20 @@
+[
+  {
+    "teamName" : "RedDevils",
+    "owner" : "SAF",
+    "teamCrest" : "resources/images/redDevils.png",
+    "jersey" : "resources/images/redShirt.png"
+  },
+  {
+    "teamName" : "Anonymous",
+    "owner" : "Anonymous",
+    "teamCrest" : "resources/images/anonymous.png",
+    "jersey" : "resources/images/blackshirt.png"
+  },
+  {
+    "teamName" : "Hazardous",
+    "owner" : "Hazard",
+    "teamCrest" : "resources/images/hazard.png",
+    "jersey" : "resources/images/greenShirt.png"
+  }
+]

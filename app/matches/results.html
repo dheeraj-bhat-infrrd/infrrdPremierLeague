@@ -2,14 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Home Page</title>
-  <link rel="stylesheet" href="home/home.css">
+  <title>Matches-Results</title>
+  <link rel="stylesheet" href="matches/matches.css">
 </head>
 <body>
   <div class="container">
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" data-target="#mainNavbar" data-toggle="collapse">
 
-      <a href="#" class="active"><img ng-src="resources/images/logo-dark.png" alt="Infrrd" class="navbar-brand"></a>
+      <a ui-sref="home"><img ng-src="resources/images/logo-dark.png" alt="Infrrd" class="navbar-brand"></a>
+
       <div class="navbar-header">
         <button class="navbar-toggle">
           <span class="icon-bar"></span>
@@ -17,17 +18,17 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-      <div class="navbar-collapse collapse navLinks dropdown" id="mainNavbar">
+      <div class="navbar-collapse collapse navLinks navbar-right dropdown" id="mainNavbar">
 
         <ul class="nav navbar-nav navbar-right right-margin">
           <li><a href="" class="dropdown-toggle" data-toggle="dropdown">Players</a>
             <ul class="dropdown-menu">
-              <li><a ui-sref="players" class="active">Player Search</a></li>
+              <li><a ui-sref="players">Player Search</a></li>
             </ul>
           </li>
           <li><a href="" class="dropdown-toggle" data-toggle="dropdown">Matches</a>
             <ul class="dropdown-menu">
-              <li><a ui-sref="results">Results</a></li>
+              <li><a ui-sref="results" class="active">Results</a></li>
               <li><a href="#">Schedule</a></li>
               <li><a href="#">Calender</a></li>
             </ul>
@@ -63,10 +64,23 @@
       </div>
     </nav>
 
-    <div class="container logoStyle">
-      <img ng-src="resources/images/Cricket-logo.gif" alt="Infrrd Premier League">
-    </div>
+    <div class="resultsClass">
+      <div class="row-md-2 heading">
+        <h3>Results</h3>
+      </div>
 
+      <div class="resultsContent" ng-repeat="result in resultsData" style="margin-left: 4%; margin-right: 4%;">
+        <div class="col md-6 matchResults">
+          <span>{{ result.scoreTeam1 }}/{{ result.wicketsTeam2}}</span>
+          <img ng-src="{{result.team1Crest}}" alt="team1">
+          <span>VS</span>
+          <img ng-src="{{result.team2Crest}}" alt="team2">
+          <span>{{ result.scoreTeam2 }}/{{ result.wicketsTeam1}}</span>
+          <span class="winnerSpan">{{ result.winner }} won the match</span>
+          <span class="winnerSpan" style="margin-left:45px !important;"><a href="" ng-click="showScoreCard(result.id)">Scorecard </a></span>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

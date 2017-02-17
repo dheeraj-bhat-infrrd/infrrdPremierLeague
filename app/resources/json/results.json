@@ -1,0 +1,39 @@
+[
+  {
+    "id" : 1,
+    "team1":"RedDevils",
+    "scoreTeam1": 100,
+    "wicketsTeam2": 4,
+    "team1Crest": "resources/images/redDevils.png",
+    "team2":"Anonymous",
+    "scoreTeam2": 40,
+    "wicketsTeam1": 10,
+    "team2Crest": "resources/images/anonymous.png",
+    "winner" : "RedDevils"
+  },
+  {
+    "id" : 2,
+    "team1":"RedDevils",
+    "scoreTeam1": 100,
+    "wicketsTeam2": 6,
+    "team1Crest": "resources/images/redDevils.png",
+    "team2":"Hazardous",
+    "scoreTeam2": 70,
+    "wicketsTeam1": 10,
+    "team2Crest": "resources/images/hazard.png",
+    "winner" : "RedDevils"
+  },
+  {
+    "id" : 3,
+    "team1":"Anonymous",
+    "scoreTeam1": 80,
+    "wicketsTeam2": 6,
+    "team1Crest": "resources/images/anonymous.png",
+    "team2":"Hazardous",
+    "scoreTeam2": 70,
+    "wicketsTeam1": 9,
+    "team2Crest": "resources/images/hazard.png",
+    "winner" : "Anonymous"
+  }
+
+]
