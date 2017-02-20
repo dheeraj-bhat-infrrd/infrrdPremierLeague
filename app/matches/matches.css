@@ -50,7 +50,7 @@ nav{
   margin: 50px 10px;
   border: 2px solid #696969;
   background-color: #0f0f0f;
-  box-shadow: 4px 5 px 5px #808080;
+  box-shadow: 4px 5px 5px #808080;
   border-radius: 3px 15px 3px;
 }
 
@@ -84,6 +84,81 @@ nav{
   border-radius: 40px;
 }
 
+.scoreCardPopup .modal-content{
+  background-color: #d3d3d3;
+}
 .teamHeadings{
   display:flex;
+}
+
+.teamName a{
+  border-bottom:1px solid gray;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: gray;
+}
+
+.teamName a:hover{
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+.teamName a:focus{
+  border: 1px solid gray;
+  border-bottom: 0;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.battingScoreCard{
+  margin-top: 20px;
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  box-shadow: 4px 5px 5px gray;
+  border-radius: 4px;
+
+}
+
+.battingScoreCard th{
+  border: 1px solid #d3d3d3;
+  border-right: 1px solid gray !important;
+  background-color: #d3d3d3;
+  padding-left: 10px;
+}
+
+.battingScoreCard td{
+  border: 1px solid gray;
+  background-color: black;
+  color: #C0C0C0;
+  padding-left: 10px;
+}
+
+.bowlingScoreCard{
+  margin-top: 20px;
+  border: 1px solid #C0C0C0;
+  width: 80%;
+  box-shadow: 4px 5px 5px gray;
+  border-radius: 4px;
+
+}
+
+.bowlingScoreCard th{
+  border: 1px solid #C0C0C0;
+  border-right: 1px solid gray !important;
+  background-color: #C0C0C0;
+  padding-left: 10px;
+}
+
+.bowlingScoreCard td{
+  border: 1px solid gray;
+  background-color: black;
+  color: #C0C0C0;
+  padding-left: 10px;
 }

@@ -18,6 +18,10 @@ angular.module('InfrrdPL.matches',['ui.router'])
 }])
 
 .controller('resultsCtrl',['$scope','$state','$http',function($scope,$state,$http){
+
+  $scope.score1Team = false;
+  $scope.score2Team = false;
+
   $http.get('resources/json/results.json').then(function(response){
     $scope.resultsData = response.data;
   });
@@ -43,11 +47,6 @@ angular.module('InfrrdPL.matches',['ui.router'])
 
   $scope.matchId = globalId;
 
-
-
-}])
-
-.controller('scoreCardCtrl',['$scope','$state','$http',function($scope,$state,$http){
 
 
 }])

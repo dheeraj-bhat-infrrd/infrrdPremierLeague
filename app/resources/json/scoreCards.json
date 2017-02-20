@@ -4,7 +4,7 @@
     "team1Batting" : [
       {
         "batsman" : "aaa",
-        "out" : true,
+        "out" : "out",
         "runs" : 10,
         "balls" : 3,
         "fours" : 2,
@@ -12,7 +12,7 @@
       },
       {
         "batsman" : "bbb",
-        "out" : true,
+        "out" : "out",
         "runs" : 20,
         "balls" : 6,
         "fours" : 2,
@@ -20,7 +20,7 @@
       },
       {
         "batsman" : "ccc",
-        "out" : true,
+        "out" : "out",
         "runs" : 1,
         "balls" : 3,
         "fours" : 0,
@@ -28,7 +28,7 @@
       },
       {
         "batsman" : "ddd",
-        "out" : false,
+        "out" : "not out",
         "runs" : 58,
         "balls" : 12,
         "fours" : 7,
@@ -36,7 +36,7 @@
       },
       {
         "batsman" : "eee",
-        "out" : true,
+        "out" : "out",
         "runs" : 6,
         "balls" : 6,
         "fours" : 1,
@@ -44,7 +44,7 @@
       },
       {
         "batsman" : "fff",
-        "out" : false,
+        "out" : "not out",
         "runs" : 5,
         "balls" : 6,
         "fours" : 1,
@@ -84,7 +84,7 @@
     "team2Batting" : [
       {
         "batsman" : "ggg",
-        "out" : true,
+        "out" : "out",
         "runs" : 10,
         "balls" : 3,
         "fours" : 2,
@@ -92,7 +92,7 @@
       },
       {
         "batsman" : "hhh",
-        "out" : true,
+        "out" : "out",
         "runs" : 5,
         "balls" : 6,
         "fours" : 1,
@@ -100,7 +100,7 @@
       },
       {
         "batsman" : "iii",
-        "out" : true,
+        "out" : "out",
         "runs" : 5,
         "balls" : 3,
         "fours" : 0,
@@ -108,7 +108,7 @@
       },
       {
         "batsman" : "jjj",
-        "out" : true,
+        "out" : "out",
         "runs" : 10,
         "balls" : 12,
         "fours" : 2,
@@ -116,7 +116,7 @@
       },
       {
         "batsman" : "kkk",
-        "out" : true,
+        "out" : "out",
         "runs" : 6,
         "balls" : 6,
         "fours" : 1,
@@ -124,7 +124,7 @@
       },
       {
         "batsman" : "lll",
-        "out" : true,
+        "out" : "out",
         "runs" : 4,
         "balls" : 6,
         "fours" : 1,
@@ -170,7 +170,7 @@
     "team1Batting" : [
       {
         "batsman" : "aaa",
-        "out" : true,
+        "out" : "out",
         "runs" : 10,
         "balls" : 3,
         "fours" : 2,
@@ -178,7 +178,7 @@
       },
       {
         "batsman" : "bbb",
-        "out" : true,
+        "out" : "out",
         "runs" : 20,
         "balls" : 6,
         "fours" : 2,
@@ -186,7 +186,7 @@
       },
       {
         "batsman" : "ccc",
-        "out" : true,
+        "out" : "out",
         "runs" : 1,
         "balls" : 3,
         "fours" : 0,
@@ -194,7 +194,7 @@
       },
       {
         "batsman" : "ddd",
-        "out" : false,
+        "out" : "not out",
         "runs" : 58,
         "balls" : 12,
         "fours" : 7,
@@ -202,7 +202,7 @@
       },
       {
         "batsman" : "eee",
-        "out" : true,
+        "out" : "out",
         "runs" : 6,
         "balls" : 6,
         "fours" : 1,
@@ -210,7 +210,7 @@
       },
       {
         "batsman" : "fff",
-        "out" : false,
+        "out" : "not out",
         "runs" : 5,
         "balls" : 6,
         "fours" : 1,
@@ -250,7 +250,7 @@
     "team2Batting" : [
       {
         "batsman" : "ggg",
-        "out" : true,
+        "out" : "out",
         "runs" : 10,
         "balls" : 3,
         "fours" : 2,
@@ -258,7 +258,7 @@
       },
       {
         "batsman" : "hhh",
-        "out" : true,
+        "out" : "out",
         "runs" : 5,
         "balls" : 6,
         "fours" : 1,
@@ -266,7 +266,7 @@
       },
       {
         "batsman" : "iii",
-        "out" : true,
+        "out" : "out",
         "runs" : 5,
         "balls" : 3,
         "fours" : 0,

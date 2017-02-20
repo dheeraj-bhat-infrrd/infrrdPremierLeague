@@ -90,17 +90,86 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4>{{ scoreCardTeam1}} VS {{scoreCardTeam2}}</h4>
             <h5>{{ score.winner }} won the match</h5>
-            <div class="teamHeadings">
-              <div class="team1Name">
-                <a href="">{{ scoreCardTeam1}}</a>
-              </div>
-              <div class="team2Name" >
-                <a href="">{{ scoreCardTeam2}}</a>
-              </div>
-            </div>
           </div>
           <div class="modal-body">
-            <h1>scores</h1>
+            <div class="teamHeadings">
+              <div class="teamName">
+                <a href="" ng-click="score1Team = true; score2Team=false;">{{ scoreCardTeam1}}</a>
+              </div>
+              <div class="teamName" >
+                <a href="" ng-click="score1Team=false; score2Team=true;">{{ scoreCardTeam2}}</a>
+              </div>
+            </div>
+            <div class="showScoreTeam1" ng-show="score1Team" style="text-align:left">
+              <table class="battingScoreCard">
+                <tr>
+                  <th colspan="2">Batsmen</th>
+                  <th>Runs</th>
+                  <th>Balls</th>
+                  <th>Fours</th>
+                  <th>Sixes</th>
+                </tr>
+                <tr ng-repeat="batsman in score.team1Batting">
+                  <td>{{ batsman.batsman }}</td>
+                  <td>{{ batsman.out }}</td>
+                  <td>{{ batsman.runs }}</td>
+                  <td>{{ batsman.balls }}</td>
+                  <td>{{ batsman.fours }}</td>
+                  <td>{{ batsman.sixes }}</td>
+                </tr>
+              </table>
+              <table class="bowlingScoreCard">
+                <tr>
+                  <th>Bowler</th>
+                  <th>Overs</th>
+                  <th>Wickets</th>
+                  <th>Runs</th>
+                  <th>Maidens</th>
+                </tr>
+                <tr ng-repeat="bowler in score.team2Bowling">
+                  <td>{{ bowler.bowler }}</td>
+                  <td>{{ bowler.overs }}</td>
+                  <td>{{ bowler.wickets }}</td>
+                  <td>{{ bowler.runs }}</td>
+                  <td>{{ bowler.maidens }}</td>
+                </tr>
+              </table>
+            </div>
+            <div class="showScoreTeam2" ng-show="score2Team">
+              <table class="battingScoreCard">
+                <tr>
+                  <th colspan="2">Batsmen</th>
+                  <th>Runs</th>
+                  <th>Balls</th>
+                  <th>Fours</th>
+                  <th>Sixes</th>
+                </tr>
+                <tr ng-repeat="batsman in score.team2Batting">
+                  <td>{{ batsman.batsman }}</td>
+                  <td>{{ batsman.out }}</td>
+                  <td>{{ batsman.runs }}</td>
+                  <td>{{ batsman.balls }}</td>
+                  <td>{{ batsman.fours }}</td>
+                  <td>{{ batsman.sixes }}</td>
+                </tr>
+              </table>
+              <table class="bowlingScoreCard">
+                <tr>
+                  <th>Bowler</th>
+                  <th>Overs</th>
+                  <th>Wickets</th>
+                  <th>Runs</th>
+                  <th>Maidens</th>
+                </tr>
+                <tr ng-repeat="bowler in score.team1Bowling">
+                  <td>{{ bowler.bowler }}</td>
+                  <td>{{ bowler.overs }}</td>
+                  <td>{{ bowler.wickets }}</td>
+                  <td>{{ bowler.runs }}</td>
+                  <td>{{ bowler.maidens }}</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="modal-footer" style>
              <h4 style="text-align:left">{{ score.manOfMatch }} is the man of the match</h4>
