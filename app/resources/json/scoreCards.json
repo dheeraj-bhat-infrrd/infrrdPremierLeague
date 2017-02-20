@@ -1,0 +1,334 @@
+[
+  {
+    "id" : 1,
+    "team1Batting" : [
+      {
+        "batsman" : "aaa",
+        "out" : true,
+        "runs" : 10,
+        "balls" : 3,
+        "fours" : 2,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "bbb",
+        "out" : true,
+        "runs" : 20,
+        "balls" : 6,
+        "fours" : 2,
+        "sixes" : 1
+      },
+      {
+        "batsman" : "ccc",
+        "out" : true,
+        "runs" : 1,
+        "balls" : 3,
+        "fours" : 0,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "ddd",
+        "out" : false,
+        "runs" : 58,
+        "balls" : 12,
+        "fours" : 7,
+        "sixes" : 5
+      },
+      {
+        "batsman" : "eee",
+        "out" : true,
+        "runs" : 6,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "fff",
+        "out" : false,
+        "runs" : 5,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      }
+    ],
+    "team2Bowling" : [
+      {
+        "bowler" : "ggg",
+        "overs" : 1,
+        "wickets" : 1,
+        "runs" : 20,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "hhh",
+        "overs" : 2,
+        "wickets" : 2,
+        "runs" : 40,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "iii",
+        "overs" : 1,
+        "wickets" : 2,
+        "runs" : 20,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "jjj",
+        "overs" : 2,
+        "wickets" : 0,
+        "runs" : 20,
+        "maidens" : 0
+      }
+    ],
+    "team2Batting" : [
+      {
+        "batsman" : "ggg",
+        "out" : true,
+        "runs" : 10,
+        "balls" : 3,
+        "fours" : 2,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "hhh",
+        "out" : true,
+        "runs" : 5,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "iii",
+        "out" : true,
+        "runs" : 5,
+        "balls" : 3,
+        "fours" : 0,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "jjj",
+        "out" : true,
+        "runs" : 10,
+        "balls" : 12,
+        "fours" : 2,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "kkk",
+        "out" : true,
+        "runs" : 6,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "lll",
+        "out" : true,
+        "runs" : 4,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      }
+    ],
+    "team1Bowling" : [
+      {
+        "bowler" : "aaa",
+        "overs" : 1,
+        "wickets" : 1,
+        "runs" : 10,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "ddd",
+        "overs" : 2,
+        "wickets" : 3,
+        "runs" : 5,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "ccc",
+        "overs" : 1,
+        "wickets" : 2,
+        "runs" : 10,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "eee",
+        "overs" : 2,
+        "wickets" : 0,
+        "runs" : 15,
+        "maidens" : 0
+      }
+    ],
+    "manOfMatch" : "ddd",
+    "winner" : "RedDevils"
+
+  },
+  {
+    "id" : 2,
+    "team1Batting" : [
+      {
+        "batsman" : "aaa",
+        "out" : true,
+        "runs" : 10,
+        "balls" : 3,
+        "fours" : 2,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "bbb",
+        "out" : true,
+        "runs" : 20,
+        "balls" : 6,
+        "fours" : 2,
+        "sixes" : 1
+      },
+      {
+        "batsman" : "ccc",
+        "out" : true,
+        "runs" : 1,
+        "balls" : 3,
+        "fours" : 0,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "ddd",
+        "out" : false,
+        "runs" : 58,
+        "balls" : 12,
+        "fours" : 7,
+        "sixes" : 5
+      },
+      {
+        "batsman" : "eee",
+        "out" : true,
+        "runs" : 6,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "fff",
+        "out" : false,
+        "runs" : 5,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      }
+    ],
+    "team2Bowling" : [
+      {
+        "bowler" : "ggg",
+        "overs" : 1,
+        "wickets" : 1,
+        "runs" : 20,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "hhh",
+        "overs" : 2,
+        "wickets" : 2,
+        "runs" : 40,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "iii",
+        "overs" : 1,
+        "wickets" : 2,
+        "runs" : 20,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "jjj",
+        "overs" : 2,
+        "wickets" : 0,
+        "runs" : 20,
+        "maidens" : 0
+      }
+    ],
+    "team2Batting" : [
+      {
+        "batsman" : "ggg",
+        "out" : true,
+        "runs" : 10,
+        "balls" : 3,
+        "fours" : 2,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "hhh",
+        "out" : true,
+        "runs" : 5,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "iii",
+        "out" : true,
+        "runs" : 5,
+        "balls" : 3,
+        "fours" : 0,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "jjj",
+        "out" : true,
+        "runs" : 10,
+        "balls" : 12,
+        "fours" : 2,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "kkk",
+        "out" : true,
+        "runs" : 6,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      },
+      {
+        "batsman" : "lll",
+        "out" : true,
+        "runs" : 4,
+        "balls" : 6,
+        "fours" : 1,
+        "sixes" : 0
+      }
+    ],
+    "team1Bowling" : [
+      {
+        "bowler" : "aaa",
+        "overs" : 1,
+        "wickets" : 1,
+        "runs" : 10,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "ddd",
+        "overs" : 2,
+        "wickets" : 3,
+        "runs" : 5,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "ccc",
+        "overs" : 1,
+        "wickets" : 2,
+        "runs" : 10,
+        "maidens" : 0
+      },
+      {
+        "bowler" : "eee",
+        "overs" : 2,
+        "wickets" : 0,
+        "runs" : 15,
+        "maidens" : 0
+      }
+    ],
+    "manOfMatch" : "ddd",
+    "winner" : "RedDevils"
+
+  }
+]

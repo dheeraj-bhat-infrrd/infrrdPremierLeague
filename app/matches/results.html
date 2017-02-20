@@ -77,7 +77,35 @@
           <img ng-src="{{result.team2Crest}}" alt="team2">
           <span>{{ result.scoreTeam2 }}/{{ result.wicketsTeam1}}</span>
           <span class="winnerSpan">{{ result.winner }} won the match</span>
-          <span class="winnerSpan" style="margin-left:45px !important;"><a href="" ng-click="showScoreCard(result.id)">Scorecard </a></span>
+          <span class="winnerSpan" style="margin-left:45px !important;"><a href="" ng-click="setScoreCard(result); scoreCards.forEach(showScoreCard)" data-toggle="modal" data-target="#scoreModal">Scorecard </a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scoreCardPopup">
+    <div class="modal fade" id="scoreModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4>{{ scoreCardTeam1}} VS {{scoreCardTeam2}}</h4>
+            <h5>{{ score.winner }} won the match</h5>
+            <div class="teamHeadings">
+              <div class="team1Name">
+                <a href="">{{ scoreCardTeam1}}</a>
+              </div>
+              <div class="team2Name" >
+                <a href="">{{ scoreCardTeam2}}</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <h1>scores</h1>
+          </div>
+          <div class="modal-footer" style>
+             <h4 style="text-align:left">{{ score.manOfMatch }} is the man of the match</h4>
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>

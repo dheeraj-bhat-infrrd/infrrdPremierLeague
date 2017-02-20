@@ -22,14 +22,32 @@ angular.module('InfrrdPL.matches',['ui.router'])
     $scope.resultsData = response.data;
   });
 
-  $scope.showScoreCard = function(id){
-    globalId = id;
-    $state.go('scorecard');
+  $http.get('resources/json/scoreCards.json').then(function(response){
+    $scope.scoreCards = response.data;
+  });
+
+  $scope.setScoreCard = function(result){
+    globalId = result.id;
+    $scope.scoreCardTeam1 = result.team1;
+    $scope.scoreCardTeam2 = result.team2;
   }
+
+  $scope.showScoreCard = function(result){
+    if(globalId ===  result.id){
+      $scope.score = result;
+    }
+
+
+
+  }
+
+  $scope.matchId = globalId;
+
+
+
 }])
 
 .controller('scoreCardCtrl',['$scope','$state','$http',function($scope,$state,$http){
 
-  $scope.matchId = globalId;
 
 }])

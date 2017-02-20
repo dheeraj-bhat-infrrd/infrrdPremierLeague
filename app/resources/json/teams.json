@@ -3,18 +3,21 @@
     "teamName" : "RedDevils",
     "owner" : "SAF",
     "teamCrest" : "resources/images/redDevils.png",
-    "jersey" : "resources/images/redShirt.png"
+    "jersey" : "resources/images/redShirt.png",
+    "members" : [ "aaa","bbb","ccc","ddd","eee","fff" ]
   },
   {
     "teamName" : "Anonymous",
     "owner" : "Anonymous",
     "teamCrest" : "resources/images/anonymous.png",
-    "jersey" : "resources/images/blackshirt.png"
+    "jersey" : "resources/images/blackshirt.png",
+    "members" : ["ggg","hhh","iii","jjj","kkk","lll"]
   },
   {
     "teamName" : "Hazardous",
     "owner" : "Hazard",
     "teamCrest" : "resources/images/hazard.png",
-    "jersey" : "resources/images/greenShirt.png"
+    "jersey" : "resources/images/greenShirt.png",
+    "members" : ["mmm","nnn","ooo","ppp","qqq","rrr"]
   }
 ]
