@@ -10,11 +10,6 @@ angular.module('InfrrdPL.matches',['ui.router'])
     controller: 'resultsCtrl'
   });
 
-  $stateProvider.state('scorecard',{
-    url: '/results/scorecard',
-    templateUrl: 'matches/scoreCard.html',
-    controller: 'scoreCardCtrl'
-  });
 }])
 
 .controller('resultsCtrl',['$scope','$state','$http',function($scope,$state,$http){
@@ -40,9 +35,6 @@ angular.module('InfrrdPL.matches',['ui.router'])
     if(globalId ===  result.id){
       $scope.score = result;
     }
-
-
-
   }
 
   $scope.matchId = globalId;

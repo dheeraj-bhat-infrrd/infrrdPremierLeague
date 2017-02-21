@@ -115,6 +115,7 @@ nav{
   box-sizing: border-box;
   border-radius: 4px;
   text-decoration: none;
+  color: black;
 }
 
 .battingScoreCard{
